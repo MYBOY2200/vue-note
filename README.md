@@ -1,2 +1,2 @@
 # vue-note
-vue-note
+vue-note.
