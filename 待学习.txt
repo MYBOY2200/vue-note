@@ -1,0 +1,38 @@
+1.slot-scoped (让父组件中插槽内容能够访问子组件中才有的数据，需要在子组件设置插槽prop，然后在父组件的template中使用slot-scoped)(这个是旧语法新语法详见官网教程)
+2.弹出层限制背景滚动 (设置body overflow:hidden)
+3.js报错是否继续执行 (不执行)
+4.rem	(相对于 <html> 元素的 font-size 的相对值)
+5.:error-sync (已解决)
+6.props的单向数据流 (想修改引用型子组件prop,应在子组件另起一个data，赋了初始值为prop后(父组件的data改变,子组件的关联data并不会跟着改变)，修改的时候要重新赋值一个新的引用型数据才不会影响父组件(或者用slice之后再赋值给子组件data最简单))
+		    （若不想修改，只是根据prop做格式化输出,用computed）
+7.mixins （已了解）
+8.箭头函数this(callback作为props) (已解决,详看es6箭头函数this指向教程)
+9.promise异步编程 async/await用法 （async函数完全可以看作多个异步操作，包装成的一个 Promise 对象(返回值)，而await命令就是内部then命令的语法糖(返回的是resolve或者reject的值)。）
+10.插槽的使用,研究一下数据流。(已解决)
+11.深入响应式原理 (已解决)
+12.数组去重 （推荐数组filter方法，不改变原数组）a.filter((ele,index,arr)=>{return arr.indexOf(ele)===index})
+13.axios一次获取多个接口 (axios.all([a,b]),只有a,b两个接口都获取成功才会执行all的then，只要有一个接口获取失败了，执行catch)
+14.异步任务串行执行和并行执行 (串行就例如setTimeout的嵌套，并行例如setTimeout不嵌套)
+15.请求拦截器 (请求前和响应前拦截axios.interceptors.request.use())
+16.在发送请求之前修改数据 (axios.default.transformRequest)
+17.$emit派发多个参数，在父组件使用的时候还加入自定义参数；van-swipe-cell的before-close 回调函数中的参数问题 （单个参数$event是实参，多个参数arguments对象是实参）
+18.函数参数传对象默认值（MDN对象结构赋值）
+21.路由守卫（已学习）
+22.动态路由匹配中this.$route.params(已解决)
+27.query传参传对象会如何（参数值会以%5Bobject%20Object%5D的形式展现，params同理）
+28.一个带name属性的van-field的#input插槽有两个v-model的时候对应的values会怎么样
+	(values对象中name属性对应的键只对应#input中第一个v-model值，要拼接多个值只能用data中的数据)
+	(其中一个van-field会对应一个name,不写的话在values对象中的键是undefinded,值是空字符串"")
+	(其中多个van-field可以嵌套在某一个van-field的#input插槽里面)
+29.深度选择器/deep/(可以确保设置框架里某些不好取的样式以及把样式渗透到子组件)
+30.update钩子（更改了绑定到dom上的data数据updated钩子才会触发，单单是改data数据或者是修改dom都不会触发）
+32.安卓和苹果对js日期的支持比较(new Date('2015-1-1')和new Date('2015/1/1'))(已解决)
+33.路由重定向和前置路由守卫的先后(重定向先)
+24.Iterator接口，Map 和 Set 结构，Generator 函数(已学习)
+19.路由权限管理
+20.vuex设置登录状态
+31.脚手架3.x版本使用图片
+32.ngnix部署
+23.单元测试 e2e测试 eslint
+25.class中的static
+26.nodejs(ECMAScript 和 NPM以及Native)
