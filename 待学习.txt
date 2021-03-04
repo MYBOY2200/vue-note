@@ -16,7 +16,7 @@
 15.请求拦截器 (请求前和响应前拦截axios.interceptors.request.use())
 16.在发送请求之前修改数据 (axios.default.transformRequest)
 17.$emit派发多个参数，在父组件使用的时候还加入自定义参数；van-swipe-cell的before-close 回调函数中的参数问题 （单个参数$event是实参，多个参数arguments对象是实参）
-18.函数参数传对象默认值（MDN对象结构赋值）
+18.函数参数传对象默认值（MDN对象解构赋值）
 21.路由守卫（已学习）
 22.动态路由匹配中this.$route.params(已解决)
 27.query传参传对象会如何（参数值会以%5Bobject%20Object%5D的形式展现，params同理）
@@ -29,10 +29,15 @@
 32.安卓和苹果对js日期的支持比较(new Date('2015-1-1')和new Date('2015/1/1'))(已解决)
 33.路由重定向和前置路由守卫的先后(重定向先)
 24.Iterator接口，Map 和 Set 结构，Generator 函数(已学习)
-19.路由权限管理
+
+26.push和replace的区别(push后浏览器返回是之前的url路径；replace后把之前的替换掉了，浏览器返回后是之前再之前的路径)
+27.require.js（解决异步加载js文件和js文件之前的依赖问题）
+31.脚手架3.x版本使用图片（v-bind变量的方式需要用require语法，得到的是字符串；直接赋值src可以用绝对路径或者相对路径；最终显示出来的src是一样的）
+19.路由权限管理(利用全局路由钩子判断是否需要登录；利用局部路由钩子判断是否有特定身份；通过路由meta对象和vuex或localstorage记录的登录状态做判断)
 20.vuex设置登录状态
-31.脚手架3.x版本使用图片
 32.ngnix部署
+33.自定义指令
+34.computed的原理
 23.单元测试 e2e测试 eslint
 25.class中的static
 26.nodejs(ECMAScript 和 NPM以及Native)
