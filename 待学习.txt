@@ -7,7 +7,7 @@
 		    （若不想修改，只是根据prop做格式化输出,用computed）
 7.mixins （已了解）
 8.箭头函数this(callback作为props) (已解决,详看es6箭头函数this指向教程)
-9.promise异步编程 async/await用法 （async函数完全可以看作多个异步操作，包装成的一个 Promise 对象(返回值)，而await命令就是内部then命令的语法糖(返回的是resolve或者reject的值)。）
+9.promise异步编程 async/await用法 （async函数完全可以看作多个异步操作，包装成的一个 Promise 对象(async函数的返回值为promise对象)，而await命令就是内部then命令的语法糖(await后面紧跟的是一个promise对象，await返回的是resolve或者reject的值)。）
 10.插槽的使用,研究一下数据流。(已解决)
 11.深入响应式原理 (已解决)
 12.数组去重 （推荐数组filter方法，不改变原数组）a.filter((ele,index,arr)=>{return arr.indexOf(ele)===index})
