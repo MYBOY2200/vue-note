@@ -38,6 +38,9 @@
 32.ngnix部署(已了解)
 33.下拉菜单模糊搜索(已想通regexp.test(string))
 33.自定义指令
+33.虚拟dom vnode
+33.元素的dataset
+34.render渲染函数
 34.computed的原理
 23.单元测试 e2e测试 eslint
 25.class中的static
