@@ -1,0 +1,58 @@
+1.递归删除 （ant design）
+2.表单判断 （ant design）
+3.表单form属性 （ant design）
+4.表单搜索 （ant design）
+5.ansyc await (已学)
+6.map (已学)
+7.es6 其他
+8.其他选项能输入 （不需要）
+9.fastclick 导致ios的input难以选中 (已解决)
+10.跨域以及动态域名 (已解决)
+11.slider组件 （不需要）
+12.文字不能被选中 (已解决)
+13.history刷新404 (已有方案)
+14.nginx部署项目 (已有方案)
+15.鼠标放在盒子上背景图片放大 (已解决)
+16.显示更多 (已解决)
+17.移动端1px
+18.形参默认值
+19.对象深拷贝(已解决)
+20.token权限
+1.bottom
+2.grid
+3.viewport
+4.url
+5.em
+6.regexp
+7.lazyload
+8.maodian
+9.write-mode
+10.两行...
+11.nth-last-of-type()
+12.form-data和payload
+13.相同路由不同query的跳转；改写Router构造函数的push函数
+14.路由钩子
+15.scrollBehavior
+16.生命周期
+17.有图片的时候获取body高度不准确
+18.min-height: 100vh
+19.this.$event.target
+20.object-fit
+
+本地模式调查
+//开发模式接口默认前置路径为/api,会自动变为本机ip+/api如：http://localhost:8080/api,
+由于设置了proxy代理，/api和之前的路径http://localhost:8080/api会代理成目标路径如：target: "http://192.168.3.4:8081"
+Request URL:http://localhost:8080/api/questionnaire/InsertQuestionnaire (请求的接口)
+Host:localhost:8080 (主机)
+Origin:http://localhost:8080 （源）
+Referer:http://localhost:8080/investigate (router中的路径)
+
+http://nic.gz8h.com.cn:10002/
+
+线上模式输血
+Request URL: http://59.38.110.188:8099/nurses/GetReceiveBloodList (请求的接口)(端口8099同下)
+Host: 59.38.110.188:8099 (主机)(因为nigix对接口做了跨域，实际的主机端口可能是8080等，只是显示为8099)
+Origin: http://59.38.110.188:8099  （源）(8099为nginx设置网站链接的端口)
+Referer: http://59.38.110.188:8099/nurse (router中的路径)
+
+http://59.38.110.188:8099/login?emp_code=8i8FKloDtgE%3D

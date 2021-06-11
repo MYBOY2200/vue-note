@@ -4,7 +4,7 @@
 4.rem	(相对于 <html> 元素的 font-size 的相对值)
 5.:error-sync (已解决)
 6.props的单向数据流 (想修改引用型子组件prop,应在子组件另起一个data，赋了初始值为prop后(父组件的data改变,子组件的关联data并不会跟着改变)，修改的时候要重新赋值一个新的引用型数据才不会影响父组件(或者用slice之后再赋值给子组件data最简单))
-		    （若不想修改，只是根据prop做格式化输出,用computed）
+		    （若不想修改，只是根据prop做格式化输出,用computed(依旧利用slice)）
 7.mixins （已了解）
 8.箭头函数this(callback作为props) (已解决,详看es6箭头函数this指向教程)
 9.promise异步编程 async/await用法 （async函数完全可以看作多个异步操作，包装成的一个 Promise 对象(async函数的返回值为promise对象)，而await命令就是内部then命令的语法糖(await后面紧跟的是一个promise对象，await返回的是resolve或者reject的值)。）
@@ -36,11 +36,15 @@
 19.路由权限管理(利用全局路由钩子判断是否需要登录；利用局部路由钩子判断是否有特定身份；通过路由meta对象和vuex或localstorage记录的登录状态做判断)
 20.vuex设置登录状态(已学习)
 32.ngnix部署(已了解)
-33.下拉菜单模糊搜索(已想通regexp.test(string))
-33.自定义指令
-33.虚拟dom vnode
-33.元素的dataset
-34.render渲染函数
+33.下拉菜单模糊搜索(已实现regexp.test(string))
+33.自定义指令(已了解)
+33.虚拟dom vnode(已了解)
+33.元素的dataset(已了解)
+34.render渲染函数(已了解)
+27.移动端app思路：1）uniapp 2)原生App（不属于我们）3）wap2app打包做好的H5网页(做好的H5网页必须要有域名,线下项目不行，内网项目需要用H5+app进行打包) 4）H5+app打包，可以把做好的H5网页做成线下的安装包，包括安卓和ios，也可以上架，上架前需要修改打包前原web代码，如修改axios的baseurl为直接的后端地址，以及修改config里的publicPath为./
+29.移动端1px细线实现(可用伪元素、CSS3的缩放、媒体查询做到自适应真正的1px)
+28.flex布局的flex-basis；flex布局被内容挤乱的原因
+35.v-model在组件中使用，组件model选项改变默认行为，以及v-model的原理
 34.computed的原理
 23.单元测试 e2e测试 eslint
 25.class中的static
