@@ -56,3 +56,9 @@ Origin: http://59.38.110.188:8099  （源）(8099为nginx设置网站链接的端口)
 Referer: http://59.38.110.188:8099/nurse (router中的路径)
 
 http://59.38.110.188:8099/login?emp_code=8i8FKloDtgE%3D
+
+小程序appID(wxca39d8d9fa730e2c)
+原始ID（gh_805b3f58e99c）
+github(tokens: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)
+设置github仓库提交代码的token:
+git remote set-url origin https://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@github.com/MYBOY2200/learn-vue.git/

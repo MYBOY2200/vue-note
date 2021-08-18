@@ -41,18 +41,28 @@
 33.虚拟dom vnode(已了解)
 33.元素的dataset(已了解)
 34.render渲染函数(已了解)
-27.移动端app思路：1）uniapp 2)原生App（不属于我们）3）wap2app打包做好的H5网页(做好的H5网页必须要有域名,线下项目不行，内网项目需要用H5+app进行打包) 4）H5+app打包，可以把做好的H5网页做成线下的安装包，包括安卓和ios，也可以上架，上架前需要修改打包前原web代码，如修改axios的baseurl为直接的后端地址，以及修改config里的publicPath为./
+27.移动端app思路：1）uniapp 2)原生App（不属于我们）3）wap2app打包做好的H5网页(做好的H5网页必须要有域名,线下项目不行，内网项目需要用H5+app进行打包) 4）H5+app打包，可以把做好的H5网页做成线下的安装包，包括安卓和ios，也可以上架，上架前需要修改打包前原web代码，如修改axios的baseurl为直接的后端地址，以及修改config里的publicPath为./，取消所有路由懒加载，mode改为hash
 29.移动端1px细线实现(可用伪元素、CSS3的缩放、媒体查询做到自适应真正的1px)
-28.flex布局的flex-basis；flex布局被内容挤乱的原因
-29: v-if在组件中使用
-30.$emit派发多个参数怎么取
-31.怎么判断是空对象和空数组
-32.props默认值为数组或对象需要工厂函数
-33.数组对象依据某个字段整合分组
-34.computed的getter和setter，以及配合父子组件prop通讯使用
-
-35.v-model在组件中使用，组件model选项改变默认行为，以及v-model的原理
+28.flex布局的flex-basis；flex布局被内容挤乱的原因(设置百分比宽度固定布局,flex-basis会被挤乱；或者子元素word-break:break-all设置文字换行（推荐）)
+29: v-if在组件中使用（可以使用）
+30：v-for在组件中使用(可以使用，必须绑定key，为了把迭代数据传递到组件里，要使用 prop)
+30.$emit派发多个参数怎么取(父组件使用方法时入参为arguments对象，函数里用[...x]获取派发出来的数组)
+31.怎么判断是空对象和空数组(数组转Number([])为''，或者length，对象Object.keys({}),使用Number()判断,或者length)
+32.props默认值为数组或对象需要工厂函数(已解决)
+33.数组对象依据某个字段整合分组(已解决)
+34.computed的getter和setter，以及配合父子组件prop通讯使用(错误使用，正确是用watch观察prop，改动data)
+35.v-model在组件中使用，组件model选项改变默认行为，以及v-model的原理(已学习)
+28.publicPath（./相对路径好处：可以部署到任意域名下，因为用的相对路径，只要整个项目迁移，图片资源就不会出问题，所以打包成安卓app需要./，同时不能使用路由history模式和pages多页面应用，注意：用了./页面刷新会报错）
+30.三元表达式连写（var a = true；var b= false；var c = a?'a':b?'b':'c'//'c'）按左到右的顺序判断
+31.短路运算连写||(var d = a || b || c)按左到右的顺序判
+29.loading原生实现(已实现，利用svg和css3的animation)
+31.多层组件传值(已学习，利用v-bind="$attrs" v-on="$listeners")
+32.H5+App学习
+32.nginx学习
+27.https和h5扫码(h5扫码需要https的网站，nginx配置https需要证书并放在nginx安装文件中，位置可以自己指定，并在conf文件里配置)
 34.computed的原理
 23.单元测试 e2e测试 eslint
 25.class中的static
 26.nodejs(ECMAScript 和 NPM以及Native)
+27.important不同层级是否后者优先（都是!important的时候谁权重高谁优先,若权重一样，以后定义的样式为准）
+28.transition父盒子设置了 子盒子是否能取消（transition属性不能继承，需在本盒子设定）
