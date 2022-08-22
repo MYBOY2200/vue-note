@@ -60,5 +60,7 @@ http://59.38.110.188:8099/login?emp_code=8i8FKloDtgE%3D
 小程序appID(wxca39d8d9fa730e2c)
 原始ID（gh_805b3f58e99c）
 github(tokens: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)
+新的token: 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
 设置github仓库提交代码的token:
 git remote set-url origin https://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@github.com/MYBOY2200/learn-vue.git/
+git remote set-url origin https://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@github.com/MYBOY2200/learn-vue.git/
