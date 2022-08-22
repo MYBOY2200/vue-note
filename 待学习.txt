@@ -57,12 +57,17 @@
 31.短路运算连写||(var d = a || b || c)按左到右的顺序判
 29.loading原生实现(已实现，利用svg和css3的animation)
 31.多层组件传值(已学习，利用v-bind="$attrs" v-on="$listeners")
-32.H5+App学习
-32.nginx学习
 27.https和h5扫码(h5扫码需要https的网站，nginx配置https需要证书并放在nginx安装文件中，位置可以自己指定，并在conf文件里配置)
-34.computed的原理
-23.单元测试 e2e测试 eslint
-25.class中的static
-26.nodejs(ECMAScript 和 NPM以及Native)
 27.important不同层级是否后者优先（都是!important的时候谁权重高谁优先,若权重一样，以后定义的样式为准）
 28.transition父盒子设置了 子盒子是否能取消（transition属性不能继承，需在本盒子设定）
+29.websoket的使用(已了解)
+30.微信小程序学习(已了解)
+31.小程序web-view（外网网站需要在小程序后台设置业务域名，跟小程序关联的公众号中的网页不需要设置，若网页要使用jssdk则需要公众号，用扫一扫功能甚至需要企业认证，jssdk必须在微信浏览器中使用）
+31.cookie学习（可服务器后端设置，体现在响应头;也可以前端用js设置返回的数据，都是会在请求头自动带上，或者自己手动传参
+32.H5+App学习(已了解)
+32.nginx学习(已了解)
+34.computed的原理(已了解)
+23.单元测试 e2e测试 eslint
+25.class中的static(静态方法，实例不继承，相当于不写入原型，直接通过类调用，可跟非静态同名，可被子类继承；静态属性同上；私有属性和方法前面加上#,并且不能被子类继承)
+26.nodejs(ECMAScript 和 NPM以及Native)
+27.实现native扫码支付(需要公众号和商户号,然后调用api接口，返回url，生成二维码,用户扫码支付，商户后台确定)
